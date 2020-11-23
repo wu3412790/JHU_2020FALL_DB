@@ -1,0 +1,35 @@
+1. List the name of country in Asia that has the newest cases on Sep.
+
+2. List the name of countries that have their daily new cases >10000 in a continuous 7 days.
+
+3. For a country, define a "peak" to be a day, that the country has the newest cases in this day than all previous days. Find the number of peaks of France.
+
+4. Find the number of days, that Korea has more new cases than Japan in the day.
+
+5. Find the average new cases of Brazil in the last 7 days.
+
+6. List the name of countries in South America, which once had more than 10000 new cases, but had less than 1000 new cases yesterday.
+
+7. Find all pairs of U.S. states (A, B), that A has higher shut-down level than B, while B has more cases than A.
+
+8. List the name of countries, which in turn has the least rate of the following, cumulative cases/population, cumulative cases/GDP, cumulative cases/area.
+
+9. List the name of countries that have their daily new cases more than the day before in a continuous 7 days.
+
+10. List the country with the first case and that date.
+
+11. List the top ten countries with highest cumulative cases.
+
+12. List the top ten countries with highest deaths cases.
+
+13. List the top ten countries with highest deaths/cumulative cases rate.
+
+14. List the name of country that has the largest average increasing rate in confirmative cases in previous 7 days. 
+
+15. List the State in the US with highest cumulative cases.
+
+16. List the State in the US with highest deaths/cumulative.
+
+17. List the name of State in the US that has the largest average increasing rate in confirmative cases in previous 7 days.
+
+18. List the State in the US with the requirement of Quarantine.
