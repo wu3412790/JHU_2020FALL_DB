@@ -1,8 +1,8 @@
-1. List the name of country in Asia that has the newest cases on Sep.
+1. List the name of country in Asia that has the largest number of new cases on Sep.
 
 2. List the name of countries that have their daily new cases >10000 in a continuous 7 days.
 
-3. For a country, define a "peak" to be a day, that the country has the newest cases in this day than all previous days. Find the number of peaks of France.
+3. For a country, define a "peak" to be a day, that the country has the largest number of new cases in this day than all previous days. Find the number of peaks of France.
 
 4. Find the number of days, that Korea has more new cases than Japan in the day.
 
