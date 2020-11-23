@@ -1,8 +1,20 @@
 1. List the name of country in Asia that has the largest number of new cases on Sep.
 
+Create view as Sep as ( select Country, sum(Cases) as SepCases from GlobalDailyCases where Day>=2020-09-01 and Day<=2020-09-30 group by Country
+);
+
+Select country from Sep as S, CountryInfo as C where C.Country=S.Country and C.Continet='Asia' and S.SepCases=(Select max(SepCases) from Sep);
+
 2. List the name of countries that have their daily new cases >10000 in a continuous 7 days.
 
+Select distinct D1.Country from GlobalDailyCases as D1, GlobalDailyCases as D2, GlobalDailyCases as D3, GlobalDailyCases as D4, GlobalDailyCases as D5, GlobalDailyCases as D6, GlobalDailyCases as D7 where D1.Country=D2.Country and D2.Country=D3.Country and D3.Country=D4.Country and D4.Country=D5.Country and D5.Country=D6.Country and D6.Country=D7.Country and 
+D1.Cases>10000 and D2.Cases>10000 and D3.Cases>10000 and D4.Cases>10000 and D5.Cases>10000 and D6.Cases>10000 and D7.Cases>10000 and DATEDIFF(day, D1.day, D2.day)=1 and  DATEDIFF(day, D2.day, D3.day)=1 and  DATEDIFF(day, D3.day, D4.day)=1 and  DATEDIFF(day, D4.day, D5.day)=1 and  DATEDIFF(day, D5.day, D6.day)=1 and  DATEDIFF(day, D6.day, D7.day)=1
+   
 3. For a country, define a "peak" to be a day, that the country has the largest number of new cases in this day than all previous days. Find the number of peaks of France.
+
+Create view Peaks as (select G.country as country , G.day as day from GlobalCases as G where G.cases>(select cases from globalcases where country=G.country and G.cases>cases))
+
+select count(day) from Peaks where country="France"
 
 4. Find the number of days, that Korea has more new cases than Japan in the day.
 
